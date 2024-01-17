@@ -48,6 +48,10 @@ class Trimmer {
     }
   }
 
+  Future<void> updateVolume(double vol) async {
+    _videoPlayerController?.setVolume(vol);
+  }
+
   Future<String> _createFolderInAppDocDir(
     String folderName,
     StorageDir? storageDir,
